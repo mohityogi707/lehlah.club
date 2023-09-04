@@ -1,0 +1,205 @@
+.navbar {
+    height: 110px;
+    background-color:$black;
+    .navbar-brand {
+        width: 153px;
+    }
+    & .menu-icon {
+        width: 22px;
+    }
+    & .header-offcanvas {
+        width: 280px;
+        & .btn-close {
+            font-size: 13px;
+        }
+        & .navbar-nav {
+            gap: 60px;
+            & .nav-item {
+                & .nav-link {
+                    font-size: 16px;
+                    color: $white;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                    transition: all 0.3s ease-in-out;
+                       &:hover {
+                        color: $theme1;
+                       }
+                    }
+    
+                }
+        }
+        
+        }
+}
+.fixed-navbar {
+    // top: 0;
+    // position: fixed !important;
+    animation-name: fixedAnim;
+    animation-duration: 1s;
+    // background-color: white !important;
+    animation-fill-mode: forwards;
+     background-color: rgba($black, 0.7);
+     backdrop-filter: blur(15px);
+    // -webkit-box-shadow: 0 12px 6px rgba(0, 0, 0, 0.06);
+    // -moz-box-shadow: 0 12px 6px rgba(0, 0, 0, 0.06);
+    // box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
+
+//   @keyframes fixedAnim {
+//     from {
+//         top: -80px;
+//     }
+  
+//     to {
+//         top: 0;
+//     }
+//   }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@mixin navbar-mixin-min-sm() {}
+// Medium devices (tablets, 768px and up)
+@mixin navbar-mixin-min-md() {}
+// Large devices (desktops, 992px and up)
+@mixin navbar-mixin-min-lg() {}
+// X-Large devices (large desktops, 1200px and up)
+@mixin navbar-mixin-min-xl() {}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin navbar-mixin-min-xxl() {}
+// X-Large devices (large desktops, less than 1400px)
+@mixin navbar-mixin-max-xl() {
+.navbar {
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .header-offcanvas {
+            & .btn-close {
+            }
+            & .navbar-nav {
+                & .nav-item {
+                    & .nav-link {
+                           &:hover {
+                           }
+                        }
+        
+                    }
+            }
+            
+            }
+}
+}
+// Large devices (desktops, less than 1200px)
+@mixin navbar-mixin-max-lg() {
+    .navbar {
+        .navbar-brand {
+        }
+        & .menu-icon {
+        }
+        & .header-offcanvas {
+            & .btn-close {
+            }
+            & .navbar-nav {
+                gap: 35px;
+                & .nav-item {
+                    & .nav-link {
+                           &:hover {
+                           }
+                        }
+        
+                    }
+            }
+            
+            }
+}
+}
+// Medium devices (tablets, less than 992px)
+@mixin navbar-mixin-max-md() {
+    .navbar {
+        height: 100px;
+        .navbar-brand {
+            width: 140px;
+        }
+        & .menu-icon {
+        }
+        & .header-offcanvas {
+            & .btn-close {
+            }
+            & .navbar-nav {
+                gap: 25px;
+                & .nav-item {
+                    
+                    & .nav-link {
+                        font-size: 14px;
+                           &:hover {
+                           }
+                        }
+        
+                    }
+            }
+            
+            }
+}
+}
+// Small devices (landscape phones, less than 768px)
+@mixin navbar-mixin-max-sm() {
+    .navbar {
+        height: 90px;
+        .navbar-brand {
+            width: 130px;
+        }
+        & .menu-icon {
+        }
+        & .header-offcanvas {
+             width: 280px;
+             height: 500px;
+            & .btn-close {
+            }
+            & .navbar-nav {
+                gap: 20px;
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 13px;
+                           &:hover {
+                           }
+                        }
+        
+                    }
+            }
+            
+            }
+}
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin navbar-mixin-max-xs() {
+    .navbar {
+        height: 70px;
+        .navbar-brand {
+            width: 120px;
+        }
+        & .menu-icon {
+        }
+        & .header-offcanvas {
+            & .offcanvas-header {
+                height: 75px
+            }
+            & .offcanvas-logo {
+                width: 120px;
+            }
+            & .btn-close {
+            }
+            & .navbar-nav {
+                gap: 15px;
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 12px;
+                           &:hover {
+                           }
+                        }
+        
+                    }
+            }
+            
+            }
+}
+}

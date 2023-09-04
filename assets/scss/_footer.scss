@@ -1,0 +1,324 @@
+// footer start
+.footer {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 7%;
+        height: 27%;
+        background: url(../img/Footer/footerImg2.png) no-repeat;
+        background-size: 75px auto;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 25%;
+        height: 25%;
+        background: url(../img/Footer/footerimg3.png) no-repeat;
+        background-size:max(195px) auto;
+    }
+    & .footer-logo {
+        max-width: 320px;
+    }
+    & .footer-title {
+        font-size: 16px;
+        color: $white;
+    }
+    & .links {
+        font-size: 16px;
+        color: $white;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $theme1;
+            transform: translateX(8px);
+        }
+    }
+    & .doubt {
+        font-size: 24px;
+        color: $white;
+    }
+    & .mail {
+        font-size: 18px;
+        color: $white;
+        & .email {
+            font-size: 18px;
+            color: $white;
+        }
+    }
+    & .copyright {
+        font-size: 16px;
+        color: $white;
+    }
+}
+
+// footer media query start
+// Small devices (landscape phones, 576px and up)
+@mixin footer-mixin-min-sm() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin footer-mixin-min-md() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin footer-mixin-min-lg() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin footer-mixin-min-xl() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin footer-mixin-min-xxl() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin footer-mixin-max-xl() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin footer-mixin-max-lg() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+        }
+        & .footer-title {
+        }
+        & .links {
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin footer-mixin-max-md() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+            max-width: 290px;
+        }
+        & .footer-title {
+        }
+        & .links {
+            font-size: 14px;
+            &:hover {
+            }
+        }
+        & .doubt {
+        }
+        & .mail {
+            & .email {
+            }
+        }
+        & .copyright {
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin footer-mixin-max-sm() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+            max-width: 180px;
+        }
+        & .footer-title {
+            font-size: 14px;
+        }
+        & .links {
+            font-size: 12px;
+            &:hover {
+            }
+        }
+        & .doubt {
+            font-size: 22px;
+        }
+        & .mail {
+            font-size: 17px;
+            & .email {
+                font-size: 17px;
+            }
+        }
+        & .copyright {
+            font-size: 15px;
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin footer-mixin-max-xs() {
+    .footer {
+        &::before {
+        }
+        &::after {
+        }
+        & .footer-logo {
+            max-width: 110px;
+        }
+        & .footer-title {
+            font-size: 13px;
+        }
+        & .links {
+            font-size: 11px;
+            &:hover {
+            }
+        }
+        & .doubt {
+            font-size: 16px;
+        }
+        & .mail {
+            font-size: 14px;
+            & .email {
+                font-size: 14px;
+            }
+        }
+        & .copyright {
+            font-size: 12px;
+        }
+    }
+}

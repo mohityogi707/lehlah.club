@@ -1,0 +1,853 @@
+.herotwo {
+    & .herotwo-img {
+        filter: brightness(0.5);
+        & .hero-img {
+            transition: all 0.3s ease-in-out;
+        }
+        &:hover {
+            & .hero-img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    & .starimg {
+            animation: rotation 5s linear infinite;
+            @keyframes rotation {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(359deg);
+                }
+              }
+        
+    }
+    & .herotwo-heading {
+        font-size: 30px;
+        color: $white;
+        & .staricon {
+            top: -10px;
+        }
+    }
+    & .herotwo-title{
+        font-size: 17px;
+        color: $white;
+    }
+    & .herotwo-title2{
+        font-size: 15px;
+        color: $white;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin herotwo-mixin-min-sm() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin herotwo-mixin-min-md() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin herotwo-mixin-min-lg() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin herotwo-mixin-min-xl() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin herotwo-mixin-min-xxl() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin herotwo-mixin-max-xl() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin herotwo-mixin-max-lg() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin herotwo-mixin-max-md() {
+    .herotwo {
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+        }
+        & .herotwo-title2{
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin herotwo-mixin-max-sm() {
+    .herotwo {
+        & .herotwo-img {
+            max-width: 250px;
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            font-size: 25px;
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+           font-size: 15px;
+        }
+        & .herotwo-title2{
+            font-size: 13px;
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin herotwo-mixin-max-xs() {
+    .herotwo {
+        & .starimg {
+            position: absolute;
+            left: 0;
+            z-index: 3;
+        }
+        & .herotwo-img {
+            & .hero-img {
+            }
+            &:hover {
+                & .hero-img {
+                }
+            }
+        }
+        & .herotwo-heading {
+            font-size: 22px;
+            & .staricon {
+            }
+        }
+        & .herotwo-title{
+            font-size: 14px;
+        }
+        & .herotwo-title2{
+            font-size: 11px;
+        }
+    }
+}
+
+
+// form section start
+.formSection {
+   & .form-main {
+    & .circle-main {
+        &::before {
+            content: "";
+            height: 2px ;
+            width: 80%;
+            position: absolute;
+            left: 80px;
+            top: 50%;
+            background-color: $purple;
+        }
+        & .circle {
+            height: 20px;
+            width: 20px;
+            border: 1px solid $purple;
+        }
+    }
+     & .form-img {
+        max-width: 270px;
+        right: 0;
+        top: -6rem;
+     }
+     & .form-img2 {
+        max-width: 120px;
+        right:15rem;
+        top: -7rem;
+     }
+     & .form-heaing {
+        font-size: 24px;
+     }
+    & .form-label {
+        font-size: 15px;
+    }
+    & .form-title {
+        font-size: 14px;
+    }
+    & .form-title2 {
+        font-size: 10px;
+    }
+    & .submit-btn {
+        font-size: 14px;
+    }
+   }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin formSection-mixin-min-sm() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin formSection-mixin-min-md() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin formSection-mixin-min-lg() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin formSection-mixin-min-xl() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin formSection-mixin-min-xxl() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin formSection-mixin-max-xl() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin formSection-mixin-max-lg() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+          }
+          & .form-img2 {
+          }
+          & .form-heaing {
+            font-size: 23px;
+          }
+         & .form-label {
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin formSection-mixin-max-md() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+            max-width: 190px;
+            top: -3rem;
+          }
+          & .form-img2 {
+            top: -5rem;
+            right: 8rem;
+            max-width: 100px;
+          }
+          & .form-heaing {
+            font-size: 22px;
+          }
+         & .form-label {
+
+         }
+         & .form-title {
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin formSection-mixin-max-sm() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+            max-width: 170px;
+            top: -2rem;
+          }
+          & .form-img2 {
+            top: -4rem;
+            right: 8rem;
+            max-width: 80px;
+          }
+          & .form-heaing {
+            font-size: 20px;
+          }
+         & .form-label {
+            font-size: 13px;
+         }
+         & .form-title {
+            font-size: 13px;
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+         }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin formSection-mixin-max-xs() {
+    .formSection {
+        & .form-main {
+         & .circle-main {
+             &::before {
+                width: 60%;
+             }
+             & .circle {
+             }
+         }
+          & .form-img {
+            max-width: 115px;
+            top: -1rem;
+          }
+          & .form-img2 {
+            top: -4rem;
+            right: 5rem;
+            max-width: 80px;
+          }
+          & .form-heaing {
+            font-size: 17px;
+          }
+         & .form-label {
+            font-size: 12px;
+         }
+         & .form-title {
+            font-size: 12px;
+         }
+         & .form-title2 {
+         }
+         & .submit-btn {
+            font-size: 13px;
+         }
+        }
+    }
+}
+
+
+// faq section start
+.faq-section {
+    & .question {
+        & .accordion-item {
+            & .accordion-button {
+                font-size: 30px;
+                color: $theme1;
+                &::after {
+                    content: '';
+                    // background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+                    background-image: url(../img/Index/plus.svg);
+                    height: 18px;
+                    width: 18px;
+                    background-size: cover;
+                     background-position: center;
+                     margin-left: 10px;
+                  }
+                  &:not(.collapsed)::after {
+                    content: '';
+                    background: url(../img/Index/minus.svg);
+                     height: 4px;
+                     width: 18px;
+                     border-radius: 20px;
+                     background-size: cover;
+                     background-position: center;
+                  }
+                  &:not(.collapsed) {
+                    background-color: transparent ;
+                    color: $theme1;
+                  }
+            }
+            & .accordion-body {
+                font-size: 14px;
+                color: $white;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin faqsection-mixin-min-sm() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin faqsection-mixin-min-md() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin faqsection-mixin-min-lg() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin faqsection-mixin-min-xl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin faqsection-mixin-min-xxl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin faqsection-mixin-max-xl() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin faqsection-mixin-max-lg() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin faqsection-mixin-max-md() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    font-size: 26px;
+                    &::after {
+                        height: 14px;
+                        width: 14px;
+                      }
+                      &:not(.collapsed)::after {
+                        width: 14px;
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin faqsection-mixin-max-sm() {
+    .faq-section {
+        & .faq-img {
+            max-width: 280px;
+        }
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    font-size: 18px;
+                    &::after {
+                      }
+                      &:not(.collapsed)::after {
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin faqsection-mixin-max-xs() {
+    .faq-section {
+        & .question {
+            & .accordion-item {
+                & .accordion-button {
+                    font-size: 15px;
+                    &::after {
+                        height: 12px;
+                        width: 12px;
+                      }
+                      &:not(.collapsed)::after {
+                        width: 12px;
+                      }
+                      &:not(.collapsed) {
+                      }
+                }
+                & .accordion-body {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

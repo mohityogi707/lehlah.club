@@ -1,0 +1,2691 @@
+
+// hero-section start
+.heroSection {
+    & .heroleft {
+        max-width: 300px;
+        &:hover {
+            & .heroimgone {
+                transform: scale(1.1);
+            }
+        }
+        & .heroimgone {
+            transition: all 0.3s ease-in-out;
+        }
+    }  
+    & .herocenter {
+        & .heroanimation {
+            height: 290px;
+            & .animation {
+                height: 250px;
+                    animation: move 25s;
+                    animation-iteration-count: infinite;
+                    animation-delay: 3s;
+                    position: relative;
+                @keyframes move {
+                    0% {
+                        top: 0px;
+                    }
+        
+                    6% {
+                        top: calc(-100% - 1.5rem);
+                    }
+        
+                    12% {
+                        top: calc(-100% - 1.5rem);
+                    }
+        
+                    18% {
+                        top: calc(-200% - 3rem);
+                    }
+        
+                    24% {
+                        top: calc(-200% - 3rem);
+                    }
+                    30% {
+                        top: calc(-300% - 4.5rem);
+                    }
+        
+                    36% {
+                        top: calc(-300% - 4.5rem);
+                    }
+        
+                    42% {
+                        top: calc(-400% - 6rem);
+                    }
+        
+                    48% {
+                        top: calc(-400% - 6rem);
+                    }
+                    60% {
+                        top: calc(-500% - 7.5rem);
+                    }
+        
+                    66% {
+                        top: calc(-500% - 7.5rem);
+                    }
+        
+                    72% {
+                        top: calc(-600% - 9rem);
+                    }
+        
+                    78% {
+                        top: calc(-600% - 9rem);
+                    }
+        
+                    84% {
+                        top: 0px;
+                    }
+        
+                    100% {
+                        top: 0px;
+                    }
+                    
+                }
+            }
+        }
+        & .herocontent {
+            font-size: 15px;
+            line-height: 26px;
+            color: $white;
+        }
+    }
+    & .heroright {
+        max-width: 300px;
+        &:hover {
+            & .heroimgtwo {
+                transform: scale(1.1);
+                z-index: 3 !important;
+            }
+        }
+        & .heroimgtwo {
+            transition: all 0.3s ease-in-out;
+        }
+        & .herorotote {
+            height: 180px;
+            left: 20px;
+            animation: rotation 5s linear infinite;
+            @keyframes rotation {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(359deg);
+                }
+              }
+        }
+    }       
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin herosection-mixin-min-sm() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin herosection-mixin-min-md() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin herosection-mixin-min-lg() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin herosection-mixin-min-xl() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin herosection-mixin-min-xxl() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin herosection-mixin-max-xl() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin herosection-mixin-max-lg() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                & .animation {
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin herosection-mixin-max-md() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                height: 220px;
+                & .animation {
+                    height: 190px;
+                }
+            }
+            & .herocontent {
+
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin herosection-mixin-max-sm() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            position: absolute;
+            z-index: 4;
+            & .heroanimation {
+                height: 190px;
+                & .animation {
+                    height: 170px;
+                    width: 370px;
+                }
+            }
+            & .herocontent {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin herosection-mixin-max-xs() {
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            & .heroanimation {
+                height: 140px;
+                & .animation {
+                    height: 120px;
+                    max-width: 330px;
+                }
+            }
+            & .herocontent {
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// less than 420px()
+@media screen and (max-width: 400px) {
+    
+    .heroSection {
+        & .heroleft {
+            &:hover {
+                & .heroimgone {
+                }
+            }
+            & .heroimgone {
+            }
+        }  
+        & .herocenter {
+            // padding: 0px 2rem !important;
+            & .heroanimation {
+                height: 70px !important;
+                & .animation {
+                    height: 49px !important;
+                }
+            }
+            & .herocontent {
+            }
+        }
+        & .heroright {
+            &:hover {
+                & .heroimgtwo {
+                }
+            }
+            & .heroimgtwo {
+            }
+            & .herorotote {
+            }
+        }       
+    }
+}
+// hero section end
+
+
+// style section start
+.stylesection {
+    & .styleleft {
+        font-size: 36px;
+        line-height: 44px;
+        color: $white;
+        & .staricon {
+            top: -12px;
+        }
+    }
+    & .styleright {
+        font-size: 17px;
+        line-height: 25px;
+        color: $white;
+    }
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin stylesection-mixin-min-sm() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin stylesection-mixin-min-md() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin stylesection-mixin-min-lg() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin stylesection-mixin-min-xl() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin stylesection-mixin-min-xxl() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin stylesection-mixin-max-xl() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin stylesection-mixin-max-lg() {
+    .stylesection {
+        & .styleleft {
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin stylesection-mixin-max-md() {
+    .stylesection {
+        & .styleleft {
+            font-size: 32px;
+            line-height: 40px;
+            & .staricon {
+            }
+        }
+        & .styleright {
+        }
+    
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin stylesection-mixin-max-sm() {
+    .stylesection {
+        & .styleleft {
+            font-size: 30px;
+            line-height: 35px;
+            & .staricon {
+            }
+        }
+        & .styleright {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin stylesection-mixin-max-xs() {
+    .stylesection {
+        & .styleleft {
+            font-size: 22px;
+            line-height: normal;
+            & .staricon {
+            }
+        }
+        & .styleright {
+            font-size: 13px;
+            line-height: 22px;
+        }
+    
+    }
+}
+// style section end
+
+
+// carouselsection start
+.carouselsection {
+    .cardd {
+        & .cardd-content {
+            background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, #0F0F0F 92.71%);
+            &  .arrow {
+                height: 55px;
+                width: 55px;
+                background-color: $theme1;
+                padding: 11px;
+                & .arrowicon {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .cardd-heading {
+                font-size: 32px;
+                line-height:38px ;
+                color: $white;
+            }
+            & .cardd-subheading {
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+            }
+            & .cardd-title {
+                font-size: 14px;
+                color: $white;
+                line-height: normal;
+            }
+        }
+        &:hover {
+            &  .arrow {
+                & .arrowicon {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    & .owl-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 8px;
+        & .owl-dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: $theme1;
+            &:active {
+                height: 12px;
+                width: 12px;
+                background-color: $theme1;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin carouselsection-mixin-min-sm() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin carouselsection-mixin-min-md() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin carouselsection-mixin-min-lg() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin carouselsection-mixin-min-xl() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin carouselsection-mixin-min-xxl() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin carouselsection-mixin-max-xl() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin carouselsection-mixin-max-lg() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                }
+                & .cardd-subheading {
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin carouselsection-mixin-max-md() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    height: 50px;
+                    width: 50px;
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                    font-size: 28px;
+                    line-height:30px ;
+                }
+                & .cardd-subheading {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                & .cardd-title {
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin carouselsection-mixin-max-sm() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    height: 48px;
+                    width: 48px;
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                    font-size: 26px;
+                    line-height:30px ;
+                }
+                & .cardd-subheading {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+                & .cardd-title {
+                    font-size: 13px;
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin carouselsection-mixin-max-xs() {
+    .carouselsection {
+        .cardd {
+            & .cardd-content {
+                &  .arrow {
+                    height: 42px;
+                    width: 42px;
+                    & .arrowicon {
+                    }
+                }
+                & .cardd-heading {
+                    font-size: 22px;
+                    line-height:28px ;
+                }
+                & .cardd-subheading {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                & .cardd-title {
+                    font-size: 12px;
+                }
+            }
+            &:hover {
+                &  .arrow {
+                    & .arrowicon {
+                    }
+                }
+            }
+        }
+    }
+}
+// style section end
+
+
+// latest fashion section start
+.latest-fashion {
+    & .latestfashionheading {
+        font-size: 38px;
+        line-height: 45px;
+        color: $theme1;
+    }
+    & .fashionimg {
+        max-height: 420px;
+        max-width: 420px;
+    }
+    & .fashion-content {
+        & .fashion-subheading {
+            font-size:42px;
+            line-height: 50px;
+            color: $white;
+        }
+        & .fashion-title {
+            font-size: 16px;
+            color: $white;
+            line-height: 25px;
+        }
+    }
+}
+// latest fashion section media query end
+
+// Small devices (landscape phones, 576px and up)
+@mixin latestfashion-mixin-min-sm() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin latestfashion-mixin-min-md() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin latestfashion-mixin-min-lg() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin latestfashion-mixin-min-xl() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin latestfashion-mixin-min-xxl() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin latestfashion-mixin-max-xl() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin latestfashion-mixin-max-lg() {
+    .latest-fashion {
+        & .latestfashionheading {
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin latestfashion-mixin-max-md() {
+    .latest-fashion {
+        & .latestfashionheading {
+            font-size: 30px;
+            line-height: 39px;
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+                font-size:39px;
+                line-height: 47px;
+            }
+            & .fashion-title {
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin latestfashion-mixin-max-sm() {
+    .latest-fashion {
+        & .latestfashionheading {
+            font-size: 28px;
+            line-height: 36px;
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+                font-size:30px;
+                line-height: 45px;
+            }
+            & .fashion-title {
+                font-size: 15px;
+                line-height: 23px;
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin latestfashion-mixin-max-xs() {
+    .latest-fashion {
+        & .latestfashionheading {
+            font-size: 22px;
+            line-height: 27px;
+        }
+        & .fashionimg {
+        }
+        & .fashion-content {
+            & .fashion-subheading {
+                font-size:24px;
+                line-height: 30px;
+            }
+            & .fashion-title {
+                font-size: 13px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+
+// styleicon section start
+.styleicon {
+    & .styleicon-heading {
+        font-size: 48px;
+        & .staricon {
+            top: -20px;
+        }
+    }
+    & .styleicon-title {
+        font-size: 18px;
+    }
+    & .mobile-icon {
+        max-width: 245px;
+        height: auto;
+    }
+    & .userIcons {
+        & .iconone {
+            max-height: 130px;
+            max-width: 130px;
+            top: 0;
+            right: 50px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .icontwo {
+            max-height: 200px;
+            max-width: 200px;
+            top: 66px;
+            left: 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconthree {
+            max-height: 150px;
+            max-width: 150px;
+            top: 160px;
+            right: 10px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconfour {
+            max-height: 210px;
+            max-width: 210px;
+            bottom: 0;
+            right: 105px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconfive {
+            max-height: 60px;
+            max-width: 60px;
+            bottom: 134px;
+            right: 32px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconsix {
+            max-height: 135px;
+            max-width: 135px;
+            top: 10px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconseven {
+            max-height: 120px;
+            max-width: 120px;
+            top: 48px;
+            right: 112px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconeight {
+            max-height: 125px;
+            max-width: 125px;
+            top: 156px;
+            left: 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconnine {
+            max-height:175px;
+            max-width: 175px;
+            bottom: 144px;
+            right: 48px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconten {
+            max-height: 200px;
+            max-width: 200px;
+            bottom: 0px;
+            left: 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .iconelevn {
+            max-height: 50px;
+            max-width: 50px;
+            top: 5px;
+            left: 160px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        & .icontwelv {
+            max-height: 50px;
+            max-width: 60px;
+            top: 155px;
+            left: 165px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+// carouselsection end
+
+// Small devices (landscape phones, 576px and up)
+@mixin styleicon-mixin-min-sm() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin styleicon-mixin-min-md() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin styleicon-mixin-min-lg() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin styleicon-mixin-min-xl() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin styleicon-mixin-min-xxl() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin styleicon-mixin-max-xl() {
+    .styleicon {
+        & .styleicon-heading {
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                &:hover {
+                }
+            }
+            & .icontwo {
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                &:hover {
+                }
+            }
+            & .iconten {
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin styleicon-mixin-max-lg() {
+    .styleicon {
+        & .styleicon-heading {
+            font-size: 38px;
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                right: 13px;
+                &:hover {
+                }
+            }
+            & .icontwo {
+                max-width: 200px;
+                max-height: 200px;
+                left: 0;
+                &:hover {
+                }
+            }
+            & .iconthree {
+                right: 0;
+                top: 180px;
+                &:hover {
+                }
+            }
+            & .iconfour {
+                max-width: 200px;
+                max-height: 200px;
+                &:hover {
+                }
+            }
+            & .iconfive {
+                bottom: 95px;
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                right: 0;
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                max-width: 165px;
+                max-height: 165px;
+                right: 0;
+                bottom: 158px;
+                &:hover {
+                }
+            }
+            & .iconten {
+                max-width: 200px;
+                max-height: 200px;
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                top: 115px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin styleicon-mixin-max-md() {
+    .styleicon {
+        & .styleicon-heading {
+            font-size: 36px;
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+            font-size: 17px;
+        }
+        & .mobile-icon {
+            max-width: 200px;
+            height: auto;
+        }
+        & .userIcons {
+            & .iconone {
+                right: 0;
+                max-width: 110px;
+                max-height: 110px;
+                &:hover {
+                }
+            }
+            & .icontwo {
+                max-width: 140px;
+                max-height: 140px;
+                &:hover {
+                }
+            }
+            & .iconthree {
+                top: 177px;
+                max-width: 130px;
+                max-height: 130px;
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                right: 10px;
+                bottom: 40px;
+                &:hover {
+                }
+            }
+            & .iconsix {
+                top: 0;
+                max-width: 110px;
+                max-height: 110px;
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                top: 115px;
+                left: 0;
+                max-width: 100px;
+                max-height: 100px;
+                &:hover {
+                }
+            }
+            & .iconnine {
+                max-width: 110px;
+                max-height: 110px;
+                bottom: 120px;
+                &:hover {
+                }
+            }
+            & .iconten {
+                max-width: 150px;
+                max-height: 150px;
+                left: 0;
+                
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                top: 0;
+                max-width: 40px;
+                max-height: 40px;
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                display: none;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin styleicon-mixin-max-sm() {
+    .styleicon {
+        & .styleicon-heading {
+            font-size: 28px;
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+            font-size: 15px;
+        }
+        & .mobile-icon {
+            max-width: 200px;
+        }
+        & .userIcons {
+            & .iconone {
+                max-width: 95px;
+                max-height:95px ;
+                &:hover {
+                }
+            }
+            & .icontwo {
+                max-width: 100px;
+                max-height: 110px;
+                top: 84px;
+                &:hover {
+                }
+            }
+            & .iconthree {
+                max-width: 100px;
+                max-height: 100px;
+                top: 185px;
+                &:hover {
+                }
+            }
+            & .iconfour {
+                height: 110px;
+                width: 110px;
+                left: 0;
+                &:hover {
+                }
+            }
+            & .iconfive {
+                max-width: 40px;
+                max-height: 40px;
+                right: 0;
+                bottom: 75px;
+                &:hover {
+                }
+            }
+            & .iconsix {
+                max-width: 85px;
+                max-height: 85px;
+                &:hover {
+                }
+            }
+            & .iconseven {
+                max-width: 90px;
+                max-height: 90px;
+                top: 80px;
+                &:hover {
+                }
+            }
+            & .iconeight {
+                max-width: 70px;
+                max-height: 70px;
+                top: 160px;
+                &:hover {
+                }
+            }
+            & .iconnine {
+                max-width: 95px;
+                max-height: 95px;
+                bottom: 105px;
+                &:hover {
+                }
+            }
+            & .iconten {
+                max-width: 105px;
+                max-height: 105px;
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin styleicon-mixin-max-xs() {
+    .styleicon {
+        & .styleicon-heading {
+            font-size: 24px;
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+            font-size: 13px;
+        }
+        & .mobile-icon {
+            max-width: 200px;
+        }
+        & .userIcons {
+            & .iconone {
+                height: 70px;
+                width: 70px;
+                &:hover {
+                }
+            }
+            & .icontwo {
+                top: 77px;
+                &:hover {
+                }
+            }
+            & .iconthree {
+                &:hover {
+                }
+            }
+            & .iconfour {
+                height: 85px;
+                width: 85px;
+                &:hover {
+                }
+            }
+            & .iconfive {
+                &:hover {
+                }
+            }
+            & .iconsix {
+                &:hover {
+                }
+            }
+            & .iconseven {
+                top: 90px;
+                height: 80px;
+                width: 80px;
+                &:hover {
+                }
+            }
+            & .iconeight {
+                display: none;
+                &:hover {
+                }
+            }
+            & .iconnine {
+                bottom: 115px;
+                height: 85px;
+                width: 85px;
+                &:hover {
+                }
+            }
+            & .iconten {
+                height: 100px;
+                width: 100px;
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// less than  420px
+@media screen and (max-width :420px) {
+    .styleicon {
+        & .styleicon-heading {
+            font-size: 24px;
+            & .staricon {
+            }
+        }
+        & .styleicon-title {
+            font-size: 13px;
+        }
+        & .mobile-icon {
+        }
+        & .userIcons {
+            & .iconone {
+                height: 60px !important;
+                width: 60px !important;
+                right: -20px !important;
+                &:hover {
+                }
+            }
+            & .icontwo {
+                height: 60px !important;
+                width: 60px !important;
+          
+                &:hover {
+                }
+            }
+            & .iconthree {
+                width: 65px !important;
+                height: 65px !important;
+                right: -20px !important;
+                &:hover {
+                }
+            }
+            & .iconfour {
+                &:hover {
+                }
+            }
+            & .iconfive {
+                bottom: 95px !important;
+                &:hover {
+                }
+            }
+            & .iconsix {
+                height: 60px !important;
+                width: 60px !important;
+                left: -20px !important;
+                &:hover {
+                }
+            }
+            & .iconseven {
+                &:hover {
+                }
+            }
+            & .iconeight {
+                &:hover {
+                }
+            }
+            & .iconnine {
+                bottom: 140px !important;
+                height: 80px !important;
+                width: 80px !important;
+                &:hover {
+                }
+            }
+            & .iconten {
+                height: 70px !important;
+                width: 70px !important;
+                bottom: 20px !important;
+                left: -20px !important;
+                &:hover {
+                }
+            }
+            & .iconelevn {
+                &:hover {
+                }
+            }
+            & .icontwelv {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+// @mixin styleicon-mixin-max-420px() {
+//     .styleicon {
+//         & .styleicon-heading {
+//             font-size: 24px;
+//             & .staricon {
+//             }
+//         }
+//         & .styleicon-title {
+//             font-size: 13px;
+//         }
+//         & .mobile-icon {
+//             max-width: 200px;
+//         }
+//         & .userIcons {
+//             & .iconone {
+//                 height: 70px;
+//                 width: 70px;
+//                 &:hover {
+//                 }
+//             }
+//             & .icontwo {
+//                 top: 77px;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconthree {
+//                 &:hover {
+//                 }
+//             }
+//             & .iconfour {
+//                 height: 85px;
+//                 width: 85px;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconfive {
+//                 &:hover {
+//                 }
+//             }
+//             & .iconsix {
+//                 &:hover {
+//                 }
+//             }
+//             & .iconseven {
+//                 top: 90px;
+//                 height: 80px;
+//                 width: 80px;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconeight {
+//                 display: none;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconnine {
+//                 bottom: 115px;
+//                 height: 85px;
+//                 width: 85px;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconten {
+//                 height: 100px;
+//                 width: 100px;
+//                 &:hover {
+//                 }
+//             }
+//             & .iconelevn {
+//                 &:hover {
+//                 }
+//             }
+//             & .icontwelv {
+//                 &:hover {
+//                 }
+//             }
+//         }
+//     }
+// }
+// icon-testimonal start
+.iconTestimonal {
+    & .testimonal-heading {
+        font-size: 48px;
+        color: $white;
+        & .navstar {
+            top: -16px;
+        }
+    }
+    & .center {
+        height: 47%;
+    }
+    & .testimonal-title {
+        font-size: 22px;
+        color: $black;
+        line-height: 28px;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin iconTestimonal-mixin-min-sm() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin iconTestimonal-mixin-min-md() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin iconTestimonal-mixin-min-lg() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin iconTestimonal-mixin-min-xl() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin iconTestimonal-mixin-min-xxl() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin iconTestimonal-mixin-max-xl() {
+    .iconTestimonal {
+        & .testimonal-heading {
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin iconTestimonal-mixin-max-lg() {
+    .iconTestimonal {
+        & .testimonal-heading {
+            font-size: 44px;
+        }
+        & .center {
+        }
+        & .testimonal-title {
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin iconTestimonal-mixin-max-md() {
+    .iconTestimonal {
+        & .testimonal-heading {
+            font-size: 36px;
+        }
+        & .center {
+        }
+        & .testimonal-title {
+            font-size: 20px;
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin iconTestimonal-mixin-max-sm() {
+    .iconTestimonal {
+        & .testimonal-heading {
+            font-size: 28px;
+        }
+        & .center {
+        }
+        & .testimonal-title {
+            font-size: 18px;
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin iconTestimonal-mixin-max-xs() {
+    .iconTestimonal {
+        & .testimonal-heading {
+            font-size: 24px;
+        }
+        & .center {
+        }
+        & .testimonal-title {
+            font-size: 15px;
+        }
+    }
+}
+// icon-testimonal end
+
+
+// download section start
+.downloadapp {
+    & .download-content {
+        & .download-heading {
+            font-size: 30px;
+            color: $white;
+            & .staricon {
+            }
+        }
+        & .download-title {
+            font-size: 18px;
+            line-height: 25px;
+            color: $white;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin downloadapp-mixin-min-sm() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin downloadapp-mixin-min-md() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin downloadapp-mixin-min-lg() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin downloadapp-mixin-min-xl() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin downloadapp-mixin-min-xxl() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin downloadapp-mixin-max-xl() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin downloadapp-mixin-max-lg() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                & .staricon {
+                }
+            }
+            & .download-title {
+            }
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin downloadapp-mixin-max-md() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                font-size: 28px;
+                & .staricon {
+                }
+            }
+            & .download-title {
+                font-size: 17px;
+                line-height: normal;
+            }
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin downloadapp-mixin-max-sm() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                font-size: 21px;
+                & .staricon {
+
+                }
+            }
+            & .download-title {
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin downloadapp-mixin-max-xs() {
+    .downloadapp {
+        & .download-content {
+            & .download-heading {
+                font-size: 24px;
+                & .staricon {
+                    right: 0;
+                }
+            }
+            & .download-title {
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+// download section end
+
+
+// followoninsta section start
+.followoninsta {
+    & .follow-heading {
+        font-size: 48px;
+        color: $black;
+        line-height: 45px;
+        & .follow-staricon {
+            top: -10px;
+        }
+    }
+    & .followimg {
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(0.9);
+            // & .followimg {
+            //     transform: scale(0.9);
+            // }
+        }
+    }
+    & .owl-stage-outer {
+        padding: 0;
+    }
+    & .owl-dots {
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        & .owl-dot {
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: $theme1;
+            &:active {
+                background-color: $black;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@mixin followoninsta-mixin-min-sm() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// Medium devices (tablets, 768px and up)
+@mixin followoninsta-mixin-min-md() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// Large devices (desktops, 992px and up)
+@mixin followoninsta-mixin-min-lg() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// X-Large devices (large desktops, 1200px and up)
+@mixin followoninsta-mixin-min-xl() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin followoninsta-mixin-min-xxl() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// X-Large devices (large desktops, less than 1400px)
+@mixin followoninsta-mixin-max-xl() {
+    .followoninsta {
+        & .follow-heading {
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// Large devices (desktops, less than 1200px)
+@mixin followoninsta-mixin-max-lg() {
+    .followoninsta {
+        & .follow-heading {
+            font-size: 42px;
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// Medium devices (tablets, less than 992px)
+@mixin followoninsta-mixin-max-md() {
+    .followoninsta {
+        & .follow-heading {
+            font-size: 36px;
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// Small devices (landscape phones, less than 768px)
+@mixin followoninsta-mixin-max-sm() {
+    .followoninsta {
+        & .follow-heading {
+            font-size: 30px;
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// X-Small devices (portrait phones, less than 576px)
+@mixin followoninsta-mixin-max-xs() {
+    .followoninsta {
+        & .follow-heading {
+            font-size: 24px;
+            line-height: 28px;
+            & .follow-staricon {
+            }
+        }
+        & .followimg {
+            &:hover {
+            }
+        }
+        & .owl-stage-outer {
+        }
+    }
+}
+// followinsta media query start
+
+
+@media screen and (max-width:576px) {
+    .realstyle {
+        & .marquee-img {
+            height: 28px !important;
+        }
+    }
+}
